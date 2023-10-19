@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           html{
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        nav {
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 2;
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style: none;
+            display: inline-block;
+        }
+
+        li {
+            display: inline;
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: smaller;
+        }
+
+        a:hover {
+            color: rgb(239, 188, 6);
+        }
+
+        .hov {
+            transition: 1s;
+        }
+
+        .hov:hover {
+            transform: scale(1.3);
+            box-shadow: 0px 3px 0px rgb(239, 188, 6);
+        }
+
+/*-----------------------SECTION1----------------------*/
+        #section1 {
+             margin-top: 0;
+            width: 100%;
+            height: 500px;
+           
+            padding-top: 100px; /* Add padding to create space for .intro */
+        }
+
+        .intro p {
+             margin-top: 10px; 
+             font-size: 20px;
+          
+        }
+        .intro h1{
+             font-size: 100px;
+             margin: 0;
+            font-weight: bolder;
+        }
+        .intro h2{
+            color: rgb(239, 188, 6);
+        }
+
+        .intro {
+             color: white;
+             max-width: 600px;
+             margin-top: 2%;
+             margin-left: 15%;
+             position: relative;
+             top: 10%;
+            
+            
+}
+        .image-container{
+            position: relative;
+            margin-top: -20%;
+            margin-left: 63%;
+           
+        }
+        .image-container h1{
+            position: absolute; /* Use absolute positioning for the box */
+             top: -50px; /* Adjust top position as needed */
+            left: 30px;
+            border: 1px solid rgb(239, 188, 6);
+            width: 250px;
+            height: 340px;
+            z-index: -2;
+           
+        }
+        .yellow{
+            position: absolute;
+            top: -20px;
+            left: 280px;
+            max-width: 100px;
+            color: rgb(43, 41, 41);
+            font-size: 60px;
+            rotate: 90deg;
+        }
+        .line{
+            position: relative;
+            margin-top: 10%;
+        }
+       
+        .sunflower-line {
+            position: absolute;
+             top: -98px;
+             right: 16%; /* Adjust right position as needed */
+            transform: rotate(90deg); /* Correct the property name */
+}
+
+
+/*-----------------------SECTION2----------------------*/
+
+        #section2{
+            width: 100%;
+            height: 600px;
+            
+           
+           
+        }
+            .proj{
+                max-width: 600px;
+                position: relative;
+                margin-top: 5%;
+                margin-left: 60%;
+                top: 10%;
+               
+                
+            }
+            .proj-black{
+                position: absolute;
+                margin-top: 1%;
+                font-size: 60px;
+                font-weight: bold;
+                color:  rgb(43, 41, 41);
+                
+            }
+            .proj-yellow{
+                position: absolute;
+                margin-top: 4%;
+                margin-left: 8%;
+                font-size: 40px;
+                color: rgb(239, 188, 6);
+            }
+
+        .image-sec2{
+            position: relative;
+            margin-left: 15%;
+            top: 10%;
+            
+            
+        }
+       
+        .image-sched1{
+            filter: grayscale(100%);
+            transition: 0.5s ease;
+            cursor: pointer;
+
+        }
+        .image-sched1:hover{
+            transform: scale(1.2);
+            filter: grayscale(0%);
+        }
+        .image-sched2{
+            position: absolute;
+            margin-top: 10%;
+            margin-left: 4%;
+            filter: grayscale(100%);
+            transition: 0.5s ease;
+            cursor: pointer;
+        }
+        .image-sched2:hover{
+            transform: scale(1.2);
+            filter: grayscale(0%);
+        }
+
+
+   /*-----------------------SECTION3----------------------*/    
+   #section3{
+    width: 100%;
+   height: 570px;
+   
+   
+
+
+   } 
+         .abou{
+            max-width: 600px;
+            position: relative;
+            margin-left: 14%;
+            top: 10%;
+           
+              
+               
+
+         }
+         .abou-black{
+            position: absolute;
+            margin-top: -7%;
+            margin-left: 8%;
+            font-size: 60px;
+            font-weight: bold;
+            color:  rgb(43, 41, 41);
+
+         }
+         .abou-yellow{
+            position: absolute;
+            margin-top: -4%;
+            margin-left: 18%;
+            font-size: 40px;
+            color: rgb(239, 188, 6);
+
+         }
+         .para{
+            max-width: 600px;
+            position: relative;
+            margin-left: 55%;
+            margin-top: 13%;
+            color: white;
+         }
+        
+
+         .para-sect3 b{
+            color: rgb(239, 188, 6);
+            font-size: large;
+            
+         }
+         .image-sec3{
+            position: relative;
+            margin-top: -17%;
+            margin-left: 25%;
+         }
+       
+         .image-sec3 h1{
+           
+            position: absolute; /* Use absolute positioning for the box */
+             top: -27px; /* Adjust top position as needed */
+            left: 10px;
+            border: 1px solid rgb(239, 188, 6);
+            width: 200px;
+            height: 270px;
+            z-index: -2;
+           
+      
+         }
+         .image-marga{
+            position: absolute;
+            left: -10%;
+            top: 8%;
+         }
+        
+     /*-----------------------SECTION4----------------------*/    
+     #section4{
+    width: 100%;
+   height: 500px;
+ 
+
+   } 
+        .cont-sec4{
+            max-width: 600px;
+            position: relative;
+            margin-left: 42%;
+            margin-top: 1%;
+        }
+        .cont{
+           
+            font-size: 70px;
+            font-weight: bold;
+            color:  rgb(43, 41, 41);
+            
+        }
+        .cont-yellow{
+            position: absolute;
+            top: -10%;
+            left: 7%;
+            font-size: 40px;
+            color: rgb(239, 188, 6);
+        }
+        .image-Contact{
+            max-width: 600px;
+            position: relative;
+            margin-left: 38%;
+            display: flex;
+            justify-items: baseline;
+
+            
+        }
+        
+        .icons img {
+            vertical-align: middle; /* Center the icons vertically */
+        }
+
+       span {
+            color: white;
+            font-size: 15px;
+            position: relative;
+            top: 20px;
+            margin-left: 30px;
+
+        }
+        .phone{
+            position: relative;
+            top: 10px;
+            left: 16px;
+        }
+        .face{
+            position: relative;
+            top: 6px;
+            left: 16px;
+
+        }
+        
+        #fo {
+       
+       color: #fff;
+       margin: 15px 0 10px 0;
+       font-size: 1rem;
+       font-weight: 300;
+       text-align: center;
+       
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="hov"><a href="#section1">Home</a></li>
+            <li class="hov"><a href="#section2">Projects</a></li>
+            <li class="hov"><a href="#section3">About me</a></li>
+            <li class="hov"><a href="#section4">Contact me</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="section1">
+        <div class="intro">
+            <h1>Web Developer</h1>
+            <h2>Hi! I'm JAY</h2>
+            <p>Welcome to my portfolio, a showcase of my skills and creativity. 
+               <br> Explore my work and discover the world I've crafted.</p>
+           
+        </div>
+       
+        <div class="image-container">
+            <img class="intro-img" src="Small Yellow Coreopsis Vintage Botanical Print From 1970_ - Etsy.jpg" width="250px">
+            <h1>box</h1>
+            <h2 class="yellow">YELLOW</h2>
+        </div>
+        <div class="line">
+            <hr style="width: 55%; margin-left: 15%; margin-top: 5%; border-color:rgb(239, 188, 6) ;">
+            <img class="sunflower-line" src="1-removebg-preview (1).png" alt="" width="12%">
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <section id="section2">
+        <div class="proj">
+            <h1 class="proj-black">PROJECT</h1>
+            <h1 class="proj-yellow">PROJECT</h1>
+
+        </div>
+        <div class="image-sec2">
+          <a href="indexhome.html"> <img  class="image-sched1" src="Screenshot (78).png" alt="" width="40%"></a> 
+           <a href="indexsched.html"> <img class="image-sched2" src="Screenshot (77).png" alt="" width="40%"></a> 
+
+        </div>
+       
+    </section>
+
+
+
+
+    <section id="section3">
+        <hr style="width: 50%;position: relative; top: 10%; margin-left: 38%; margin-top: 5%; border-color:rgb(239, 188, 6) ;">
+       <div class="abou">
+        <h1 class="abou-black">ABOUT ME</h1>
+        <h1 class="abou-yellow" >ABOUT ME</h1>
+
+       </div>
+       <div class="para">
+        <p class="para-sect3">I'm <b> Jaymark Bacurin </b>, a passionate web development student with a love for yellow flowers. <br>
+            This vibrant hue represents the optimism and creativity I bring to my work. I'm on a <br>
+            journey to master the art of web development, where every line of code and pixel placed <br>
+            is a chance to create something beautiful and functional.<br><br><br>
+
+            Beyond the screen, you'll often find me in my garden, tending to my own yellow flowers. <br>
+            The delicate petals and golden glow serve as a reminder of the beauty and simplicity in <br>
+            life, which I strive to infuse into my web development projects. I'm excited to share my<br>
+             progress, projects, and the ever-growing bouquet of skills I'm cultivating. <b>Join me </b>on <br>
+             this exciting adventure as I merge my love for web development and the serenity of nature.<br>
+             <b> Thank you for stopping by, and I look forward to connecting with you! </b><br></p>
+   
+       </div>
+
+       <div class="image-sec3">
+        <img src="Sunflower_Print__from_Libby_Frame_Illustration-removebg-preview.png" alt="" width="250px">
+        <h1>box</h1>
+        <img class="image-marga" src="Margaret Mee_ A Flor da Lua _ Primavera Garden Center.jpg" alt="" width="200px">
+       </div>
+
+    </section>
+    <section id="section4">
+        <div class="cont-sec4">
+            <h1 class="cont" >CONTACT </h1>
+            <h1 class="cont-yellow">CONTACT ME</h1>
+        </div>
+        
+        <div class="image-Contact">
+           <img class="email" src="OIP-removebg-preview.png" alt="" width="40px"> 
+           <span >bacurinjay@gmail.com</span>
+            <img class="phone" src="OIP__1_-removebg-preview.png" alt=""width="30px" height="30px">
+            <span>09107291166</span>
+           <a href="https://www.facebook.com/jaymark.bacurin"> <img class="face" src="131-1311658_icone-facebook-png-fb-icon-white-png-transparent-removebg-preview.png" alt=""width="40px"></a>
+           <span>Facebook</span>
+
+
+        </div>
+
+    </section>
+
+
+    <footer id="fo">
+        <p>&copy;2023 Jeymark Bacurin | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
